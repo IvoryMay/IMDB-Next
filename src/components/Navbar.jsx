@@ -17,7 +17,7 @@ const Navbar = () => {
   const handleMenu = () => setOpen(!open);
 
   return (
-    <section className="p-3">
+    <section className="mt-8 ">
       {/* Mobile Menu Button */}
       <div className="flex sm:hidden">
         <button className="mt-2 ml-auto" onClick={handleMenu}>
