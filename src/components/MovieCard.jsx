@@ -4,7 +4,7 @@ import React from 'react'
 import { HiThumbUp } from 'react-icons/hi';
 
 const MovieCard = ({movie}) => {
-    console.log(movie);
+    // console.log(movie);
 
   return (
     <section >

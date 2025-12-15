@@ -1,6 +1,6 @@
 "use client";
 
-import { getMovies, movieFetcher } from '@/services/movies';
+import { getMovies,  } from '@/services/movies';
 import { useSearchParams } from 'next/navigation';
 import useSWR from 'swr';
 
