@@ -28,11 +28,14 @@ const onChangeHandler = (e) => {
       <input type="text"
       value={search}
        onChange={onChangeHandler}
+       
        placeholder='Enter Search Keywords here...'
-       className='flex-1 h-10 p-4 outline-none bg-gray-200 rounded
-       placeholder:text-gray-400 dark:placeholder:text-gray-500 dark:text-gray-700' />
-      <button type="submit" className='bg-amber-400 px-4 h-10
-      dark:text-gray-700 hover:bg-amber-500 rounded'>Search</button>
+       className='flex-1 h-10 p-4 outline-none bg-transparent rounded
+       placeholder:text-gray-400  dark:text-gray-700' />
+      <button type="submit"
+      disabled={!search}
+      className={`${search ? 'bg-amber-400 cursor-pointer' :"bg-transparent"  } px-4 h-10
+      dark:text-gray-700  rounded`}>Search</button>
     </form>
   )
 }
