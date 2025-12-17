@@ -19,7 +19,7 @@ const page = () => {
   return (
     
     
-    <div><MovieDetailPage data={data} /></div>
+    <div><MovieDetailPage data={data}  /></div>
   )
 }
 

@@ -1,10 +1,10 @@
 import MovieDetailSection from '@/components/MovieDetailSection'
 import React from 'react'
 
-const MovieDeatailPage = ({data}) => {
+const MovieDetailPage = ({data}) => {
   return (
-    <div><MovieDetailSection data={data}/></div>
+    <div><MovieDetailSection data={data}  /></div>
   )
 }
 
-export default MovieDeatailPage
+export default MovieDetailPage
