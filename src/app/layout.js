@@ -1,8 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Container from "@/components/Container";
-import Header from "@/components/Header";
+import Container from "@/movie/components/Container";
+import Header from "@/movie/components/Header";
 import Provider from "./Provider";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,9 @@ export default function RootLayout({ children }) {
             <Header />
             {/* <Navbar /> */}
             {/* <SearchBar /> */}
+            <Suspense fallback= {null}>
             {children}
+            </Suspense>
           </Container>
         </Provider>
       </body>
